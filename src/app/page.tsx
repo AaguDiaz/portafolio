@@ -9,7 +9,6 @@ export default function Home() {
       title: "PastelCat",
       summary:
         "Sistema de gestion (SaaS) para pastelerias y servicios de catering que centraliza pedidos, produccion, stock e informacion financiera en una sola plataforma. Esta pensado para ordenar la operacion diaria, reducir errores y tomar decisiones con datos, con un diseno modular y escalable.",
-      tech: ["Next.js", "TypeScript", "Tailwind CSS"],
       techIcons: [
         { src: "/icons/tech/nextjs.svg", label: "Next.js" },
         { src: "/icons/tech/react.svg", label: "React" },
@@ -26,44 +25,77 @@ export default function Home() {
       imageAlt: "Captura del sistema PastelCat",
     },
     {
-      title: "Proyecto 02",
+      title: "Mutual ACA",
       summary:
-        "Descripcion general del proyecto. Aqui luego vamos a detallar objetivo, resultados y alcance.",
-      tech: ["Vite", "React", "TypeScript"],
-      techIcons: [],
-      webUrl: "#",
-      repoUrl: "#",
+        "Sistema de escritorio para gestion administrativa de mutual: ABM, autenticacion, reportes y generacion de documentacion, pensado para procesos internos.",
+      techIcons: [
+        { src: "/icons/tech/csharp.svg", label: "C#" },
+        { src: "/icons/tech/dotnet.svg", label: ".NET Framework 4.7.2" },
+        { src: "/icons/tech/windows.svg", label: "Windows Forms" },
+        { src: "/icons/tech/ado-sqlclient.svg", label: "ADO.NET (SqlClient)" },
+        { src: "/icons/tech/itextsharp-pdf.svg", label: "iTextSharp (PDF)" },
+      ],
+      webUrl: null,
+      repoUrl: "https://github.com/AaguDiaz/TpDiploma",
       tone: "from-emerald-500/20 via-sky-500/10 to-transparent",
-      imageSrc: null,
-      imageAlt: "",
+      imageSrc: "/imagenes/Mutual%20ACA.jpeg",
+      imageAlt: "Captura de pantalla del sistema Mutual ACA",
     },
     {
-      title: "Proyecto 03",
+      title: "Boggle",
       summary:
-        "Descripcion general del proyecto. Aqui luego vamos a detallar objetivo, resultados y alcance.",
-      tech: ["Next.js", "Node.js", "Tailwind CSS"],
-      techIcons: [],
-      webUrl: "#",
-      repoUrl: "#",
+        "Juego de palabras tipo Boggle: tablero dinamico, validacion de palabras, puntaje, ranking y modos de dificultad para partidas rapidas.",
+      techIcons: [
+        { src: "/icons/tech/html5.svg", label: "HTML" },
+        { src: "/icons/tech/css3.svg", label: "CSS" },
+        { src: "/icons/tech/javascript.svg", label: "JavaScript (vanilla)" },
+        { src: "/icons/tech/github-pages.svg", label: "GitHub Pages" },
+      ],
+      webUrl: "https://vittorisantiago.github.io/boggle/",
+      repoUrl: "https://github.com/vittorisantiago/boggle",
       tone: "from-indigo-500/25 via-violet-500/10 to-transparent",
-      imageSrc: null,
-      imageAlt: "",
+      imageSrc: "/imagenes/Boggle.jpeg",
+      imageAlt: "Captura de pantalla del juego Boggle",
     },
     {
-      title: "Proyecto 04",
+      title: "Calculadora de Teoria de Colas (CalcTC)",
       summary:
-        "Descripcion general del proyecto. Aqui luego vamos a detallar objetivo, resultados y alcance.",
-      tech: ["React", "API REST", "PostgreSQL"],
-      techIcons: [],
-      webUrl: "#",
-      repoUrl: "#",
+        "Calculadora web de teoria de colas: resuelve modelos (M/M/1, M/M/2, M/D/1, etc.) con metricas y graficos para analisis y simulacion.",
+      techIcons: [
+        { src: "/icons/tech/react.svg", label: "React" },
+        { src: "/icons/tech/tailwindcss.svg", label: "Tailwind CSS" },
+        { src: "/icons/tech/chartjs.svg", label: "Chart.js + react-chartjs-2" },
+        { src: "/icons/tech/framer-motion.svg", label: "Framer Motion" },
+        { src: "/icons/tech/github-pages.svg", label: "GitHub Pages" },
+      ],
+      webUrl: "https://aagudiaz.github.io/CalcTC/",
+      repoUrl: "https://github.com/AaguDiaz/CalcTC",
       tone: "from-amber-500/25 via-cyan-400/10 to-transparent",
-      imageSrc: null,
-      imageAlt: "",
+      imageSrc: "/imagenes/Calc.jpeg",
+      imageAlt: "Captura de pantalla de la calculadora CalcTC",
     },
   ];
 
-  const stack = ["Next.js", "TypeScript", "Tailwind CSS", "GitHub Actions", "Figma", "Node.js"];
+  const stack = [
+    { name: "Next.js", icon: "/icons/tech/nextjs.svg" },
+    { name: "React", icon: "/icons/tech/react.svg" },
+    { name: "Tailwind CSS", icon: "/icons/tech/tailwindcss.svg" },
+    { name: "Vercel", icon: "/icons/tech/vercel.svg" },
+    { name: "Node.js", icon: "/icons/tech/nodejs.svg" },
+    { name: "Express.js", icon: "/icons/tech/express.svg" },
+    { name: "Supabase", icon: "/icons/tech/supabase.svg" },
+    { name: "C#", icon: "/icons/tech/csharp.svg" },
+    { name: ".NET Framework 4.7.2", icon: "/icons/tech/dotnet.svg" },
+    { name: "Windows Forms", icon: "/icons/tech/windows.svg" },
+    { name: "ADO.NET (SqlClient)", icon: "/icons/tech/ado-sqlclient.svg" },
+    { name: "iTextSharp (PDF)", icon: "/icons/tech/itextsharp-pdf.svg" },
+    { name: "HTML", icon: "/icons/tech/html5.svg" },
+    { name: "CSS", icon: "/icons/tech/css3.svg" },
+    { name: "JavaScript (vanilla)", icon: "/icons/tech/javascript.svg" },
+    { name: "GitHub Pages", icon: "/icons/tech/github-pages.svg" },
+    { name: "Chart.js + react-chartjs-2", icon: "/icons/tech/chartjs.svg" },
+    { name: "Framer Motion", icon: "/icons/tech/framer-motion.svg" },
+  ];
 
   return (
     <div className="min-h-screen">
@@ -88,8 +120,8 @@ export default function Home() {
         </div>
       </header>
 
-      <main>
-        <section id="inicio" className="section-hero-bg">
+      <main className="section-theme-bg">
+        <section id="inicio">
           <div className="mx-auto grid w-full max-w-6xl gap-14 px-6 py-20 md:grid-cols-[1.08fr_0.92fr] md:py-24">
             <div className="flex flex-col justify-center">
               <p className="text-accent text-2xl font-semibold">Hola, soy</p>
@@ -152,7 +184,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="sobre-mi" className="section-about-bg">
+        <section id="sobre-mi">
           <div className="mx-auto w-full max-w-4xl px-6 py-20 md:py-24">
             <h2 className="text-center text-4xl font-extrabold tracking-tight text-slate-900 md:text-6xl dark:text-slate-50">
               Quien soy?
@@ -177,7 +209,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="proyectos" className="section-projects-bg">
+        <section id="proyectos">
           <div className="mx-auto w-full max-w-6xl px-6 py-14">
             <h2 className="text-center text-4xl font-extrabold tracking-tight text-slate-900 md:text-6xl dark:text-slate-50">
               Proyectos
@@ -187,8 +219,9 @@ export default function Home() {
               {projects.map((project, index) => (
                 <article
                   key={project.title}
-                  className="group rounded-2xl border border-slate-300 bg-white p-5 text-slate-900 shadow-[0_16px_40px_rgba(2,8,20,0.14)]"
+                  className="group relative rounded-2xl border border-slate-300 bg-white p-5 text-slate-900 shadow-[0_16px_40px_rgba(2,8,20,0.14)] transition-transform duration-300 hover:-translate-y-1 hover:scale-[1.02]"
                 >
+                  <div className="pointer-events-none absolute inset-0 rounded-2xl ring-2 ring-cyan-500/0 transition-all duration-300 group-hover:shadow-[0_0_42px_rgba(34,211,238,0.45)] group-hover:ring-cyan-400/70 dark:group-hover:shadow-[0_0_45px_rgba(245,183,0,0.45)] dark:group-hover:ring-amber-300/60" />
                   <div
                     className={`relative mb-6 overflow-hidden rounded-xl ${
                       project.imageSrc
@@ -223,43 +256,34 @@ export default function Home() {
 
                   <h3 className="text-center text-3xl font-bold text-slate-900">{project.title}</h3>
 
-                  {project.techIcons.length > 0 ? (
-                    <ul className="mt-4 flex flex-wrap justify-center gap-3">
-                      {project.techIcons.map((icon) => (
-                        <li
-                          key={`${project.title}-${icon.label}`}
-                          className="flex h-10 w-10 items-center justify-center rounded-full border border-slate-300 bg-white shadow-sm"
-                          title={icon.label}
-                          aria-label={icon.label}
-                        >
-                          <Image src={icon.src} alt={icon.label} width={20} height={20} />
-                        </li>
-                      ))}
-                    </ul>
-                  ) : (
-                    <ul className="mt-4 flex flex-wrap justify-center gap-2">
-                      {project.tech.map((item) => (
-                        <li
-                          key={`${project.title}-${item}`}
-                          className="rounded-full border border-slate-300 px-3 py-1 text-sm text-slate-700"
-                        >
-                          {item}
-                        </li>
-                      ))}
-                    </ul>
-                  )}
+                  <ul className="mt-4 flex flex-wrap justify-center gap-3">
+                    {project.techIcons.map((icon) => (
+                      <li
+                        key={`${project.title}-${icon.label}`}
+                        className="flex h-10 w-10 items-center justify-center rounded-full border border-slate-300 bg-white shadow-sm"
+                        title={icon.label}
+                        aria-label={icon.label}
+                      >
+                        <Image src={icon.src} alt={icon.label} width={20} height={20} />
+                      </li>
+                    ))}
+                  </ul>
 
                   <p className="mt-5 text-base leading-8 text-slate-700">{project.summary}</p>
 
-                  <div className="mt-6 grid gap-3 sm:grid-cols-2">
-                    <a
-                      className="inline-flex items-center justify-center rounded-full bg-teal-600 px-4 py-2.5 text-sm font-semibold text-white transition-opacity hover:opacity-90"
-                      href={project.webUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Sitio Web
-                    </a>
+                  <div
+                    className={`mt-6 grid gap-3 ${project.webUrl ? "sm:grid-cols-2" : "sm:grid-cols-1"}`}
+                  >
+                    {project.webUrl ? (
+                      <a
+                        className="inline-flex items-center justify-center rounded-full bg-teal-600 px-4 py-2.5 text-sm font-semibold text-white transition-opacity hover:opacity-90"
+                        href={project.webUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Sitio Web
+                      </a>
+                    ) : null}
                     <a
                       className="inline-flex items-center justify-center rounded-full border border-slate-400 px-4 py-2.5 text-sm font-semibold text-slate-700 transition-colors hover:bg-slate-100"
                       href={project.repoUrl}
@@ -281,13 +305,14 @@ export default function Home() {
             className="border-outline bg-surface space-y-4 rounded-3xl border p-8 shadow-sm"
           >
             <h2 className="text-foreground text-2xl font-semibold">Stack de trabajo</h2>
-            <ul className="flex flex-wrap gap-2">
+            <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
               {stack.map((item) => (
                 <li
-                  key={item}
-                  className="border-outline text-muted rounded-full border px-4 py-2 font-mono text-xs"
+                  key={item.name}
+                  className="border-outline bg-background flex items-center gap-3 rounded-xl border px-3 py-2"
                 >
-                  {item}
+                  <Image src={item.icon} alt={item.name} width={20} height={20} />
+                  <span className="text-muted text-sm">{item.name}</span>
                 </li>
               ))}
             </ul>
@@ -298,16 +323,44 @@ export default function Home() {
             className="border-outline bg-surface rounded-3xl border p-8 shadow-sm"
           >
             <h2 className="text-foreground text-2xl font-semibold">Contacto</h2>
-            <p className="text-muted mt-3 max-w-xl text-base">
-              Deja aqui tu email, LinkedIn y GitHub. Si quieres, el siguiente paso puede ser
-              conectar un formulario real con Resend.
+            <p className="text-muted mt-3 max-w-2xl text-base">
+              Escribime por cualquiera de estos canales.
             </p>
-            <a
-              className="bg-foreground mt-6 inline-flex rounded-full px-5 py-2.5 text-sm font-medium text-white transition-opacity hover:opacity-90"
-              href="mailto:tuemail@dominio.com"
-            >
-              tuemail@dominio.com
-            </a>
+
+            <div className="mt-6 space-y-3">
+              <a
+                className="border-outline bg-background text-foreground inline-flex w-full items-center justify-between rounded-xl border px-4 py-3 text-sm transition-colors hover:bg-slate-100"
+                href="tel:+543476588345"
+              >
+                <span>Telefono</span>
+                <span className="font-mono">3476588345</span>
+              </a>
+              <a
+                className="border-outline bg-background text-foreground inline-flex w-full items-center justify-between rounded-xl border px-4 py-3 text-sm transition-colors hover:bg-slate-100"
+                href="mailto:aaagusrc@gmail.com"
+              >
+                <span>Email</span>
+                <span className="font-mono">aaagusrc@gmail.com</span>
+              </a>
+              <a
+                className="border-outline bg-background text-foreground inline-flex w-full items-center justify-between rounded-xl border px-4 py-3 text-sm transition-colors hover:bg-slate-100"
+                href="https://www.linkedin.com/in/agustin-diaz-201165300/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>LinkedIn</span>
+                <span className="font-mono">Agustin Diaz</span>
+              </a>
+              <a
+                className="border-outline bg-background text-foreground inline-flex w-full items-center justify-between rounded-xl border px-4 py-3 text-sm transition-colors hover:bg-slate-100"
+                href="https://github.com/AaguDiaz"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>GitHub</span>
+                <span className="font-mono">AaguDiaz</span>
+              </a>
+            </div>
           </section>
         </div>
       </main>

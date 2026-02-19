@@ -11,18 +11,10 @@
   --outline: #d9dee5;
   --bg-glow-a: rgb(125 211 252 / 16%);
   --bg-glow-b: rgb(217 249 157 / 12%);
-  --hero-bg: #ffffff;
-  --hero-image: radial-gradient(circle, #d1d5db 1px, transparent 1px);
-  --hero-size: 16px 16px;
-  --hero-repeat: repeat;
-  --about-bg: #ffffff;
-  --about-image: radial-gradient(circle, #d4d4d8 1px, transparent 1px);
-  --about-size: 16px 16px;
-  --about-repeat: repeat;
-  --projects-bg: #ffffff;
-  --projects-image: none;
-  --projects-size: auto;
-  --projects-repeat: no-repeat;
+  --section-bg: #ffffff;
+  --section-image: radial-gradient(circle, #d1d5db 1px, transparent 1px);
+  --section-size: 16px 16px;
+  --section-repeat: repeat;
 }
 
 html.dark {
@@ -35,18 +27,10 @@ html.dark {
   --outline: #2d3b54;
   --bg-glow-a: rgb(30 64 175 / 34%);
   --bg-glow-b: rgb(250 204 21 / 20%);
-  --hero-bg: #01071f;
-  --hero-image: linear-gradient(122deg, #01071f 0%, #07144a 58%, #7a5a00 100%);
-  --hero-size: auto;
-  --hero-repeat: no-repeat;
-  --about-bg: #000617;
-  --about-image: linear-gradient(118deg, #000617 0%, #050d33 52%, #614700 100%);
-  --about-size: auto;
-  --about-repeat: no-repeat;
-  --projects-bg: #020a2c;
-  --projects-image: linear-gradient(120deg, #020a2c 0%, #0a1f4b 52%, #0b4b45 100%);
-  --projects-size: auto;
-  --projects-repeat: no-repeat;
+  --section-bg: #01071f;
+  --section-image: linear-gradient(122deg, #01071f 0%, #07144a 58%, #7a5a00 100%);
+  --section-size: auto;
+  --section-repeat: no-repeat;
 }
 
 @theme inline {
@@ -84,28 +68,9 @@ a {
   text-decoration: none;
 }
 
-.section-hero-bg {
-  background-color: var(--hero-bg);
-  background-image: var(--hero-image);
-  background-size: var(--hero-size);
-  background-repeat: var(--hero-repeat);
-}
-
-.section-about-bg {
-  background-color: var(--about-bg);
-  background-image: var(--about-image);
-  background-size: var(--about-size);
-  background-repeat: var(--about-repeat);
-}
-
-.section-projects-bg {
-  background-color: #ffffff;
-  background-image: none;
-}
-
-html.dark .section-projects-bg {
-  background-color: #020a2c;
-  background-image: linear-gradient(120deg, #020a2c 0%, #0a1f4b 52%, #0b4b45 100%);
-  background-size: auto;
-  background-repeat: no-repeat;
+.section-theme-bg {
+  background-color: var(--section-bg);
+  background-image: var(--section-image);
+  background-size: var(--section-size);
+  background-repeat: var(--section-repeat);
 }
