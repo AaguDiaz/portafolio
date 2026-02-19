@@ -1,4 +1,4 @@
-﻿import Image from "next/image";
+import Image from "next/image";
 import { ThemeToggle } from "@/components/theme-toggle";
 
 export default function Home() {
@@ -10,18 +10,18 @@ export default function Home() {
       summary:
         "Sistema de gestion (SaaS) para pastelerias y servicios de catering que centraliza pedidos, produccion, stock e informacion financiera en una sola plataforma. Esta pensado para ordenar la operacion diaria, reducir errores y tomar decisiones con datos, con un diseno modular y escalable.",
       techIcons: [
-        { src: "/icons/tech/nextjs.svg", label: "Next.js" },
-        { src: "/icons/tech/react.svg", label: "React" },
-        { src: "/icons/tech/tailwindcss.svg", label: "Tailwind CSS" },
-        { src: "/icons/tech/vercel.svg", label: "Vercel" },
-        { src: "/icons/tech/nodejs.svg", label: "Node.js" },
-        { src: "/icons/tech/express.svg", label: "Express.js" },
-        { src: "/icons/tech/supabase.svg", label: "Supabase" },
+        { src: "icons/tech/nextjs.svg", label: "Next.js" },
+        { src: "icons/tech/react.svg", label: "React" },
+        { src: "icons/tech/tailwindcss.svg", label: "Tailwind CSS" },
+        { src: "icons/tech/vercel.svg", label: "Vercel" },
+        { src: "icons/tech/nodejs.svg", label: "Node.js" },
+        { src: "icons/tech/express.svg", label: "Express.js" },
+        { src: "icons/tech/supabase.svg", label: "Supabase" },
       ],
       webUrl: "https://www.youtube.com/watch?v=93Tyy46XBoo",
       repoUrl: "https://github.com/AaguDiaz/pastelcatfront",
       tone: "from-cyan-500/20 via-blue-500/10 to-transparent",
-      imageSrc: "/imagenes/PastelCat.png",
+      imageSrc: "imagenes/PastelCat.png",
       imageAlt: "Captura del sistema PastelCat",
     },
     {
@@ -29,16 +29,16 @@ export default function Home() {
       summary:
         "Sistema de escritorio para gestion administrativa de mutual: ABM, autenticacion, reportes y generacion de documentacion, pensado para procesos internos.",
       techIcons: [
-        { src: "/icons/tech/csharp.svg", label: "C#" },
-        { src: "/icons/tech/dotnet.svg", label: ".NET Framework 4.7.2" },
-        { src: "/icons/tech/windows.svg", label: "Windows Forms" },
-        { src: "/icons/tech/ado-sqlclient.svg", label: "ADO.NET (SqlClient)" },
-        { src: "/icons/tech/itextsharp-pdf.svg", label: "iTextSharp (PDF)" },
+        { src: "icons/tech/csharp.svg", label: "C#" },
+        { src: "icons/tech/dotnet.svg", label: ".NET Framework 4.7.2" },
+        { src: "icons/tech/windows.svg", label: "Windows Forms" },
+        { src: "icons/tech/ado-sqlclient.svg", label: "ADO.NET (SqlClient)" },
+        { src: "icons/tech/itextsharp-pdf.svg", label: "iTextSharp (PDF)" },
       ],
       webUrl: null,
       repoUrl: "https://github.com/AaguDiaz/TpDiploma",
       tone: "from-emerald-500/20 via-sky-500/10 to-transparent",
-      imageSrc: "/imagenes/Mutual%20ACA.jpeg",
+      imageSrc: "imagenes/Mutual%20ACA.jpeg",
       imageAlt: "Captura de pantalla del sistema Mutual ACA",
     },
     {
@@ -46,15 +46,15 @@ export default function Home() {
       summary:
         "Juego de palabras tipo Boggle: tablero dinamico, validacion de palabras, puntaje, ranking y modos de dificultad para partidas rapidas.",
       techIcons: [
-        { src: "/icons/tech/html5.svg", label: "HTML" },
-        { src: "/icons/tech/css3.svg", label: "CSS" },
-        { src: "/icons/tech/javascript.svg", label: "JavaScript (vanilla)" },
-        { src: "/icons/tech/github-pages.svg", label: "GitHub Pages" },
+        { src: "icons/tech/html5.svg", label: "HTML" },
+        { src: "icons/tech/css3.svg", label: "CSS" },
+        { src: "icons/tech/javascript.svg", label: "JavaScript (vanilla)" },
+        { src: "icons/tech/github-pages.svg", label: "GitHub Pages" },
       ],
       webUrl: "https://vittorisantiago.github.io/boggle/",
       repoUrl: "https://github.com/vittorisantiago/boggle",
       tone: "from-indigo-500/25 via-violet-500/10 to-transparent",
-      imageSrc: "/imagenes/Boggle.jpeg",
+      imageSrc: "imagenes/Boggle.jpeg",
       imageAlt: "Captura de pantalla del juego Boggle",
     },
     {
@@ -62,39 +62,39 @@ export default function Home() {
       summary:
         "Calculadora web de teoria de colas: resuelve modelos (M/M/1, M/M/2, M/D/1, etc.) con metricas y graficos para analisis y simulacion.",
       techIcons: [
-        { src: "/icons/tech/react.svg", label: "React" },
-        { src: "/icons/tech/tailwindcss.svg", label: "Tailwind CSS" },
-        { src: "/icons/tech/chartjs.svg", label: "Chart.js + react-chartjs-2" },
-        { src: "/icons/tech/framer-motion.svg", label: "Framer Motion" },
-        { src: "/icons/tech/github-pages.svg", label: "GitHub Pages" },
+        { src: "icons/tech/react.svg", label: "React" },
+        { src: "icons/tech/tailwindcss.svg", label: "Tailwind CSS" },
+        { src: "icons/tech/chartjs.svg", label: "Chart.js + react-chartjs-2" },
+        { src: "icons/tech/framer-motion.svg", label: "Framer Motion" },
+        { src: "icons/tech/github-pages.svg", label: "GitHub Pages" },
       ],
       webUrl: "https://aagudiaz.github.io/CalcTC/",
       repoUrl: "https://github.com/AaguDiaz/CalcTC",
       tone: "from-amber-500/25 via-cyan-400/10 to-transparent",
-      imageSrc: "/imagenes/Calc.jpeg",
+      imageSrc: "imagenes/Calc.jpeg",
       imageAlt: "Captura de pantalla de la calculadora CalcTC",
     },
   ];
 
   const stack = [
-    { name: "Next.js", icon: "/icons/tech/nextjs.svg" },
-    { name: "React", icon: "/icons/tech/react.svg" },
-    { name: "Tailwind CSS", icon: "/icons/tech/tailwindcss.svg" },
-    { name: "Vercel", icon: "/icons/tech/vercel.svg" },
-    { name: "Node.js", icon: "/icons/tech/nodejs.svg" },
-    { name: "Express.js", icon: "/icons/tech/express.svg" },
-    { name: "Supabase", icon: "/icons/tech/supabase.svg" },
-    { name: "C#", icon: "/icons/tech/csharp.svg" },
-    { name: ".NET Framework 4.7.2", icon: "/icons/tech/dotnet.svg" },
-    { name: "Windows Forms", icon: "/icons/tech/windows.svg" },
-    { name: "ADO.NET (SqlClient)", icon: "/icons/tech/ado-sqlclient.svg" },
-    { name: "iTextSharp (PDF)", icon: "/icons/tech/itextsharp-pdf.svg" },
-    { name: "HTML", icon: "/icons/tech/html5.svg" },
-    { name: "CSS", icon: "/icons/tech/css3.svg" },
-    { name: "JavaScript (vanilla)", icon: "/icons/tech/javascript.svg" },
-    { name: "GitHub Pages", icon: "/icons/tech/github-pages.svg" },
-    { name: "Chart.js + react-chartjs-2", icon: "/icons/tech/chartjs.svg" },
-    { name: "Framer Motion", icon: "/icons/tech/framer-motion.svg" },
+    { name: "Next.js", icon: "icons/tech/nextjs.svg" },
+    { name: "React", icon: "icons/tech/react.svg" },
+    { name: "Tailwind CSS", icon: "icons/tech/tailwindcss.svg" },
+    { name: "Vercel", icon: "icons/tech/vercel.svg" },
+    { name: "Node.js", icon: "icons/tech/nodejs.svg" },
+    { name: "Express.js", icon: "icons/tech/express.svg" },
+    { name: "Supabase", icon: "icons/tech/supabase.svg" },
+    { name: "C#", icon: "icons/tech/csharp.svg" },
+    { name: ".NET Framework 4.7.2", icon: "icons/tech/dotnet.svg" },
+    { name: "Windows Forms", icon: "icons/tech/windows.svg" },
+    { name: "ADO.NET (SqlClient)", icon: "icons/tech/ado-sqlclient.svg" },
+    { name: "iTextSharp (PDF)", icon: "icons/tech/itextsharp-pdf.svg" },
+    { name: "HTML", icon: "icons/tech/html5.svg" },
+    { name: "CSS", icon: "icons/tech/css3.svg" },
+    { name: "JavaScript (vanilla)", icon: "icons/tech/javascript.svg" },
+    { name: "GitHub Pages", icon: "icons/tech/github-pages.svg" },
+    { name: "Chart.js + react-chartjs-2", icon: "icons/tech/chartjs.svg" },
+    { name: "Framer Motion", icon: "icons/tech/framer-motion.svg" },
   ];
 
   return (
@@ -170,7 +170,7 @@ export default function Home() {
 
               <div className="border-outline relative h-full w-full overflow-hidden rounded-full border-4 shadow-[0_30px_55px_rgba(2,8,20,0.38)]">
                 <Image
-                  src="/imagenes/Foto-perfil.jpeg"
+                  src="imagenes/Foto-perfil.jpeg"
                   alt="Foto de perfil de Agustin Diaz"
                   width={800}
                   height={800}
@@ -371,3 +371,4 @@ export default function Home() {
     </div>
   );
 }
+
