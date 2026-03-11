@@ -170,7 +170,7 @@ export default function Home() {
 
               <div className="border-outline relative h-full w-full overflow-hidden rounded-full border-4 shadow-[0_30px_55px_rgba(2,8,20,0.38)]">
                 <Image
-                  src="imagenes/Foto-perfil.jpeg"
+                  src="imagenes/Foto-perfil.png"
                   alt="Foto de perfil de Agustin Diaz"
                   width={800}
                   height={800}
